@@ -1,0 +1,10 @@
+{
+    "frontMatter.content.pageFolders": [
+        {
+            "path": "[[workspace]]/content/posts"
+        }
+    ],
+    "[markdown]": {
+    },
+    "frontMatter.preview.host": "http://localhost:1313/posts"
+}

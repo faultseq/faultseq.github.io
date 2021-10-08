@@ -1,0 +1,51 @@
+baseURL: 'https://faultseq.github.io/test'
+languageCode: fr-fr
+defaultContentLanguage: fr
+title: Observatoire de la Fachosphère
+theme: paper
+
+
+params:
+    AuthorName: pmt
+    defaultTheme: auto
+    description: L'observatoire est un espace d'analyse politique de haut niveau précédant la création d'un think tank résolument disruptif
+    homeInfoParams:
+        Title: Le contenu des Pros
+        Content: >
+            L'odysée de la droite forte et décomplexée
+            ![praud](https://c.tenor.com/0mL61VNP0LsAAAAd/pascal-praud-pascal.gif#center)
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+    ShowBreadCrumbs: true
+    ShowPostNavLinks: true
+
+menu:
+    main:
+        - identifier: about
+          name: intro
+          url: /introduction/
+          weight: 10
+        - identifier: categories
+          name: categories
+          url: /categories/
+          weight: 20
+        - identifier: tags
+          name: tags
+          url: /tags/
+          weight: 30
+        - identifier: search
+          name: rechercher
+          url: /search/
+          weight: 40
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
